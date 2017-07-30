@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SortingEmployeesByMultipleAttributes {
 
-  public static <T> void main(String[] args) {
+  public static  void main(String[] args) {
     // TODO Auto-generated method stub
     List<Employee> emp=new ArrayList<Employee>();
     emp.add(new Employee("Tom","Developer",45,80000));

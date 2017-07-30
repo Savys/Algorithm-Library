@@ -1,5 +1,7 @@
 package com.savitha.datastructure;
 
+
+//INCOMPLETE
 public class MyStack<T> {
   private static class StackNode<T>{
     private T data;
@@ -14,7 +16,7 @@ public class MyStack<T> {
     public T pop()
     {
       
-      return item;
+      return data;
       
     }
     public void push(T item)
@@ -23,7 +25,7 @@ public class MyStack<T> {
     }
     public T peek()
     {
-      
+      return data;
     }
     
   }

@@ -17,15 +17,15 @@ public class MinInStack {
 
     //if(top+1>size) thro
     if (top + 1 <= size) 
-      {
-        top++;
-        arr[top] = ele;
-        len++;
-      }
+    {
+      top++;
+      arr[top] = ele;
+      len++;
+    }
   }
   public int  pop(){
     if(isEmpty()) throw new NoSuchElementException("Stack underflow ");
-   return 1; 
+    return 1; 
   }
 
   private boolean isEmpty() {  
@@ -42,8 +42,7 @@ int peek(void)
     assert(top>0);
     return data[top-1];
 }*/
-  
-  
-   */
+
+
   //27,59,78
 }
