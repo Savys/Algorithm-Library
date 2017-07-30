@@ -1,5 +1,5 @@
 //package com.sriram.tree;
-package com.savitha.trie;
+package com.savitha.tree.trie;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,5 @@
 //package com.sriram.tree;
-package com.savitha.trie;
+package com.savitha.tree.trie;
 public class TrieTester {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
