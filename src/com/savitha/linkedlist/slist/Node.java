@@ -1,4 +1,4 @@
-package com.linkedlist;
+package com.savitha.linkedlist.slist;
 
 public class Node {
  public String item;

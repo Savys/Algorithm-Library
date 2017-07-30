@@ -1,4 +1,4 @@
-package com.Alllinkedlist;
+package com.savitha.linkedlist.dlist;
 
 public class Node {
 
