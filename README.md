@@ -1,2 +1,2 @@
-# JavaPractice
-Java Practice
+# Algorithm Library
+Assorted Algorithms and Library sources.
