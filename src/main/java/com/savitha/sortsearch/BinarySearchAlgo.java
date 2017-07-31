@@ -1,4 +1,5 @@
-package com.savitha.algos;
+package com.savitha.sortsearch;
+
 public class BinarySearchAlgo {
   private int searchEle(int[] input, int i) {
     int start = 0;

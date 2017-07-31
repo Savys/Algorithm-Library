@@ -1,4 +1,4 @@
-package com.savitha.algos;
+package com.savitha.designpatterns;
 
 public class SingletonObjectMain {
 
@@ -9,7 +9,6 @@ public class SingletonObjectMain {
       object = SingletonObject.getInstance();
       object.showMessage();
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
 
@@ -17,7 +16,6 @@ public class SingletonObjectMain {
       object = SingletonObject.getInstance();
       object.showMessage();
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
 
@@ -25,7 +23,6 @@ public class SingletonObjectMain {
       object = SingletonObject.getInstance();
       object.showMessage();
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
 

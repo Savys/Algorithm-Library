@@ -31,18 +31,5 @@ public class MinInStack {
   private boolean isEmpty() {  
     return top==-1;
   }
-  /*
-   * int pop(void)
-{
-    assert(top>0);
-    return data[--top];
-}
-int peek(void)
-{
-    assert(top>0);
-    return data[top-1];
-}*/
-
-
-  //27,59,78
+   //27,59,78
 }

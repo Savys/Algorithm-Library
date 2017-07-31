@@ -1,4 +1,6 @@
-package com.savitha.algos;
+package com.savitha.threads;
+
+
 public class PaypalThreadJoin {
 
   public static void main(String[] args) {

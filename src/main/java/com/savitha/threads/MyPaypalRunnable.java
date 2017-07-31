@@ -1,4 +1,4 @@
-package com.savitha.algos;
+package com.savitha.threads;
 
 public class MyPaypalRunnable implements Runnable{
 
