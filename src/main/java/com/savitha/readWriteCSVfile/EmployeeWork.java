@@ -1,4 +1,4 @@
-package savitha;
+package com.savitha.readWriteCSVfile;
 //Read from csv File - works*/
 public class EmployeeWork {
   private int empId;
