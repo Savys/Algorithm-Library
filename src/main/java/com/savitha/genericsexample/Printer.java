@@ -1,4 +1,4 @@
-package GenericsExample;
+package com.savitha.genericsexample;
 
 public class Printer {
 

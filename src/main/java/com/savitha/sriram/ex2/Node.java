@@ -1,4 +1,4 @@
-package com.sriram.ex2;
+package com.savitha.sriram.ex2;
 
 public class Node<T> {
   public T data;

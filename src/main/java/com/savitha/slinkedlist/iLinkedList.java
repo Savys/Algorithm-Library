@@ -1,4 +1,4 @@
-package com.slinkedlist;
+package com.savitha.slinkedlist;
 
 
 public interface iLinkedList {

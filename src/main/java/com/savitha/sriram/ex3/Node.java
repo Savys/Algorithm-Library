@@ -1,4 +1,4 @@
-package com.sriram.ex3;
+package com.savitha.sriram.ex3;
 
 public class Node {
   public Object data;
