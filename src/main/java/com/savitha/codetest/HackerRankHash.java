@@ -1,4 +1,4 @@
-package savitha;
+package com.savitha.codetest;
 
 import java.util.HashMap;
 import java.util.Iterator;
