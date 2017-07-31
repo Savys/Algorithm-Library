@@ -1,4 +1,4 @@
-package com.savitha.sriram.ex3;
+package com.savitha.slinkedlist.ex3.withGen;
 
 public class Node {
   public Object data;

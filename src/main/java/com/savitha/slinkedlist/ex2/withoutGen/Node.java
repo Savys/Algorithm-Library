@@ -1,4 +1,4 @@
-package com.savitha.sriram.ex2;
+package com.savitha.slinkedlist.ex2.withoutGen;
 
 public class Node<T> {
   public T data;

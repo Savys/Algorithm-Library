@@ -1,33 +1,29 @@
-package com.savitha.sriram.ex3;
+package com.savitha.slinkedlist.ex2.withoutGen;
 
 //Simple Linked List
 //With ordered add i.e new elements are added to the end.
 //In this vesion we have implemented Generic for Node. So now Node can contain any Object
+/*
+* Methods Supported: 
+* 1.add
+* 2.GetlastNode
+* 3.Print
+* 4.Remove a node
+* */
+public class LinkedList<T> {
 
-public class LinkedList {
+private Node<T> head=null;
 
-private Node head=null;
-
-public void add(Object value) {
+public void add(T value) {
   if(head == null) {
-    head = new Node(value);
+    head = new Node<T>(value);
   }else {
-    getLastNode().next = new Node(value);
+    getLastNode().next = new Node<T>(value);
   }
 }
 
-public void increment() {
-  Node current = head;
-  while(current != null) {
-    current.data = (Integer) current.data +1;
-    current = current.next;
-  }
-  System.out.print("null");
-  System.out.println("");
-}
-
-private Node getLastNode() {
-  Node current = head;
+private Node<T> getLastNode() {
+  Node<T> current = head;
   while(current != null && current.next != null) {
     current = current.next;
   }
@@ -35,7 +31,7 @@ private Node getLastNode() {
 }
 
 public void print() {
-  Node current = head;
+  Node<T> current = head;
   while(current != null) {
     System.out.print(current.data + " ->");
     current = current.next;
@@ -46,9 +42,9 @@ public void print() {
 }
   
 
-public void remove(Object i) {
-  Node current=head;
-  Node previous = null;
+public void remove(T i) {
+  Node<T> current=head;
+  Node<T> previous = null;
   
   while(current != null ) {
     if(current.data.equals(i)) {
@@ -63,34 +59,32 @@ public void remove(Object i) {
     current = current.next;
   }
 }
-
+/*
 private void reverse() {
-  Node start =head;
-  Node current=start;
+  Node<T> start =head;
+  Node<T> current=start;
    while(current.next !=null){
      current=current.next;
      
    }
-}
+}*/
 
 
 public static void main(String[] args) {
-  LinkedList list = new LinkedList();
+  LinkedList<Integer> list = new LinkedList<Integer>();
     
   list.add(new Integer(2));
-  list.add(new String("2"));
+  list.add(new Integer(2));
   list.add(new Integer(6));
   list.add(new Integer(10));
   list.add(new Integer(11));
-  list.add(new String("11"));
   list.print();
-  list.increment();
 
-  //list.remove(new Integer(2));
+  list.remove(new Integer(2));
   //list.remove(2);
   //list.removeItem(10);
   list.print();
-  list.reverse();
+ //list.reverse();
   
 }
 
