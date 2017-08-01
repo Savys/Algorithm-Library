@@ -1,4 +1,5 @@
 package com.savitha.algos;
+
 import java.util.Scanner;
 
 public class Java1dArraySolution {
@@ -17,17 +18,15 @@ public class Java1dArraySolution {
     }
     for (int j = 0; j < n; j++) {
       int sum = 0;
-      System.out.println("========");
+
       for (int k = j; k < n; k++) {
         sum = sum + a[k];
-        System.out.println("k=" + k);
-        if (sum < 0) {
+          if (sum > 0) {
           count++;
         }
       }
     }
-    System.out.println(count);
-    // System.out.println("Count: "+count);
+    System.out.println("Count: " + count);
   }
 
 }

@@ -3,8 +3,7 @@ public class SortAlphabets {
 
   public static void main(String[] args) {
     // String s="abzA";
-    String s = "savi";
-    // o/p AabZ;
+    String s = "savi"; // o/p AabZ;
     char[] words = s.toCharArray();
     for (int i = 1; i < words.length; i++) {
       if (words[i] < words[i - 1]) {

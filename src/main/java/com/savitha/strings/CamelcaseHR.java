@@ -6,7 +6,6 @@ public class CamelcaseHR {
      String s="saveChangesInTheEditor";
      int result=returnNoOfWords(s);
      System.out.println("No of words: "+result);
-
   }
 
   private static int returnNoOfWords(String s) {

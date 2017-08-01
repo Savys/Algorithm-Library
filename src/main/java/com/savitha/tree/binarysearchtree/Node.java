@@ -1,4 +1,4 @@
-package com.savitha.ex2;
+package com.savitha.tree.binarysearchtree;
 
 public class Node {
   int data;

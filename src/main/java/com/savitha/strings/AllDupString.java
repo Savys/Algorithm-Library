@@ -23,14 +23,10 @@ public class AllDupString {
           System.out.println(c);
       }
     }
-    
-    
   }
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     AllDupString dup=new AllDupString();
     dup.findDup("Java");
-
   }
 
 }

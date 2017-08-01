@@ -2,13 +2,14 @@ package com.savitha.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class SortingEmployeesByMultipleAttributes {
   
   
   public static  void main(String[] args) {
 
-    ArrayList<Employee> empList=new ArrayList<Employee>();
+    List<Employee> empList=new ArrayList<Employee>();
     
     empList.add(new Employee("Tom","Developer",45,80000));
     empList.add(new Employee("Harry","PM",50,75000));
@@ -31,7 +32,13 @@ public class SortingEmployeesByMultipleAttributes {
       System.out.println(empV);
     }
 
+    //Collections.sort(empList,new EmployeeComparator());
     Collections.sort(empList,new EmployeeComparator());
+    System.out.println("\n*** After sorting:");
+   
+    for(Employee empV: empList){
+      System.out.println(empV);
+    }
   }
 
 }
