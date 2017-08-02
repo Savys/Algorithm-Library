@@ -1,4 +1,4 @@
-package com.savitha.simpletree;
+package com.savitha.tree.simpletree;
 
 import java.util.ArrayList;
 import java.util.List;

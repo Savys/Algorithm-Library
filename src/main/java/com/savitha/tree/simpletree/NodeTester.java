@@ -1,4 +1,4 @@
-package com.savitha.simpletree;
+package com.savitha.tree.simpletree;
 
 public class NodeTester {
 
