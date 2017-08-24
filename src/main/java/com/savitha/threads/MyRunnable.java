@@ -1,6 +1,6 @@
 package com.savitha.threads;
 
-public class MyPaypalRunnable implements Runnable{
+public class MyRunnable implements Runnable{
 
   @Override
   public void run() {

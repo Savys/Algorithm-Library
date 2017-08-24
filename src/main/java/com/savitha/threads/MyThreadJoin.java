@@ -1,7 +1,7 @@
 package com.savitha.threads;
 
 
-public class PaypalThreadJoin {
+public class MyThreadJoin {
 
   public static void main(String[] args) {
     Thread t1 = new Thread(new MyPaypalRunnable(), "t1");
