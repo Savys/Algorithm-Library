@@ -1,4 +1,4 @@
-package com.savitha.slinkedlist.ex3.withGen;
+package com.savitha.slinkedlist.ex3.WithOutGen;
 
 //Simple Linked List
 //With ordered add i.e new elements are added to the end.

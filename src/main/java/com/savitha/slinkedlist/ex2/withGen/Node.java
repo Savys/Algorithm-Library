@@ -1,4 +1,4 @@
-package com.savitha.slinkedlist.ex2.withoutGen;
+package com.savitha.slinkedlist.ex2.withGen;
 
 public class Node<T> {
   public T data;

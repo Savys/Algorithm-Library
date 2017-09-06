@@ -1,4 +1,4 @@
-package com.savitha.slinkedlist.ex2.withoutGen;
+package com.savitha.slinkedlist.ex2.withGen;
 
 //Simple Linked List
 //With ordered add i.e new elements are added to the end.
