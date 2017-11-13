@@ -10,10 +10,10 @@ public class UniqueStrTest {
 }
 
   public static void main(String[] args) {
-    String ss = "helo";
+    String ss = "hello";
     System.out.println("The string is " + ss);
     if (checkUniqueChar(ss)) System.out.println("all unique");
-    else System.out.println("noop, has duplicated values");
+    else System.out.println("No, has duplicated values");
     return;
 
   }

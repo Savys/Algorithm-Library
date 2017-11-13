@@ -143,7 +143,7 @@ public class LinkedList<Anytype> {
 
   public void deletefirst() {
     Node<Anytype> last = head;
-    Node<Anytype> previoustoLast = null;
+   // Node<Anytype> previoustoLast = null;
     if (head == null) {
       return;
     }
@@ -180,7 +180,17 @@ public class LinkedList<Anytype> {
     }
     head = ptrA;
   }
-
+  private void reverseinKgroups(int i) {
+   Node current=head;
+   
+   for(int pos=0;pos<size;pos++) {
+     int count=0;
+     {
+       
+     }
+   }
+    
+  }
   public static void main(String[] args) {
 
     LinkedList<String> list = new LinkedList<String>();
@@ -203,9 +213,12 @@ public class LinkedList<Anytype> {
     // list.printdata();
     // list.deletefirst();
     // list.printdata();
+    list.reverseinKgroups(2);
     Object value = list.getelement(4);
     System.out.println(value);
 
   }
+
+  
 
 }

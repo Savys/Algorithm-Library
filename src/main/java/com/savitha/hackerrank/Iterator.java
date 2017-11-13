@@ -21,4 +21,9 @@ public class Iterator
       // TODO Auto-generated method stub
       return false;
     }
+
+    public String next() {
+      // TODO Auto-generated method stub
+      return null;
+    }
 }

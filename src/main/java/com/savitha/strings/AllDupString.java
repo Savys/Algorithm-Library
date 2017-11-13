@@ -26,7 +26,7 @@ public class AllDupString {
   }
   public static void main(String[] args) {
     AllDupString dup=new AllDupString();
-    dup.findDup("Java");
+    dup.findDup("Javass");
   }
 
 }
