@@ -29,7 +29,7 @@ public class CountFrequency {
   }
 
   public static void main(String[] args) {
-    int inputArray[]={2, 3, 3, 2, 5};
+    int inputArray[]={2, 3, 3, 2, 6};
     CountFrequency  cf=new CountFrequency();
     cf.count(inputArray);
     System.out.println("Method 2: ");

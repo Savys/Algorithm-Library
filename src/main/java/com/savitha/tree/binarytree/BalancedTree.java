@@ -1,3 +1,7 @@
+/*An empty tree is height-balanced. A non-empty binary tree T is balanced if:
+1) Left subtree of T is balanced
+2) Right subtree of T is balanced
+3) The difference between heights of left subtree and right subtree is not more than 1.*/
 package com.savitha.tree.binarytree;
 
 public class BalancedTree {
