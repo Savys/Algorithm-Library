@@ -1,6 +1,4 @@
-package com.savitha.leetcode.tree;
-
-
+package com.savitha.tree.binarysearchtree;
 
 public class isBST {
   BNode root;
