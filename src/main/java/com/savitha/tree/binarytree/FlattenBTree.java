@@ -1,5 +1,5 @@
 /*
- * Given a binary tree, flatten it to a linked list in-place.
+ * Given a binary tree, flatten it to a linked list in-place. 
  * 
  Example :
  Given
@@ -29,8 +29,11 @@ package com.savitha.tree.binarytree;
 
 import java.util.Stack;
 
+import com.savitha.tree.binarytree.rootToLeaf.TreeNode;
+
 public class FlattenBTree {
-  public TreeNode flatten(TreeNode a) {
+  private TreeNode prev = null;
+  public TreeNode flatten(TreeNode a) { //Best method iteratively
     TreeNode result = new TreeNode(0);
     TreeNode node = result;
     result.right=node;
@@ -57,12 +60,54 @@ public class FlattenBTree {
    return result.right;
  
   }
+  
+  public class FlattenTree {// Trace manually - Best method in recursion
+    private TreeNode lastNode = null;
+    public void flatten(TreeNode root) {
+        if (root == null)
+            return;
+        if (lastNode != null)
+        {
+            lastNode.left = null;
+            lastNode.right = root;
+        }
+        lastNode = root;
+        TreeNode right = root.right;
+        flatten(root.left);
+        flatten(right);
+             
+         
+    }
+}
+  public TreeNode flattenRe3(TreeNode root, TreeNode tail) {
+    if (root == null) return tail;
+    root.right = flattenRe3(root.left, flattenRe3(root.right, tail));
+    root.left = null;
+    return root;
+}
+  public void flatten_3(TreeNode root) {
+    if (root == null) return;
+    flattenRe3(root, null);
+}
+
   public static void main(String[] args) {
     FlattenBTree fbt=new FlattenBTree();
-    fbt.createTree();
+    TreeNode rootNode = fbt.createTree();
+    fbt.flatten(rootNode);
+   // fbt.flatten2(rootNode);
+    //fbt.flatten4(rootNode);
+  }
+  private void flatten4(TreeNode rootNode) {
+    if (rootNode == null)
+      return;
+  flatten(rootNode.right);
+  flatten(rootNode.left);
+  rootNode.right = prev;
+  rootNode.left = null;
+  prev = rootNode;
     
   }
-  private void createTree() {
+  private TreeNode createTree() {
     TreeNode root= new TreeNode(1);
     root.left=new TreeNode(2);
     
@@ -71,6 +116,8 @@ public class FlattenBTree {
     root.left.right = new TreeNode(4);
     root.right.left = new TreeNode(5);
     root.right.right = new TreeNode(6);    
+    return root;
+
     
   }
 }
